@@ -23,7 +23,11 @@ default: &default
 
 development:
   <<: *default
-  database: rails_api_development
+  database: rails_api
+  user: postgres
+  password: postgres
+  pool: 5
+  port: 5432
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
