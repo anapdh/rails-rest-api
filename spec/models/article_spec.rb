@@ -7,4 +7,9 @@ RSpec.describe Article, type: :model do
     # article.save
     # expect(article.id).to be > 0
   end
+
+  it 'tests article' do
+    article = FactoryBot.create(:article)
+    expect(article.title).to eq('Sample article')
+  end
 end
